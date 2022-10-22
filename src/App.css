@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+    outline: none;
+}
+
+body {
+    background-color: #44406F;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 23.5vh;
+    background-color: #211e42;
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 20px 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.img {
+    width: 223px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    margin: 10px 5px;
+}
+
+.img img {
+    width: 223px;
+    height: 35px;
+}
+
+.searchtitles {
+    margin-top: 60px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.searchtitles h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+.searchElement {
+    position: relative;
+}
+
+.searchElement input {
+    width: 900px;
+    height: 70px;
+    padding: 6px 85px 6px 65px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid green;
+    margin-top: 23px;
+    color: #CFCCCF;
+}
+
+input::placeholder {
+    color: #CFCCCF;
+}
+
+.searchElement .fa-search {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 320px;
+    top: 33px;
+    font-size: 25px;
+}
+
+.rightArrow {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 20px;
+    bottom: 6px;
+    border-radius: 100px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #a79fff;
+}
+
+main {
+    margin-top: 60px;
+}
+
+main .videosAbout p {
+    padding: 50px 0;
+    text-align: left;
+}
+
+main .videosTitle {
+    font-weight: 400;
+    color: white;
+    padding: 10px 0;
+}
+
+.videosPosition {
+    width: 100%;
+
+}
+
+.videosPosition .video {
+    border: 1px solid #000;
+    width: 189px;
+    height: 282px;
+    color: white;
+    margin: 30px 0;
+    position: relative;
+
+}
+
+.video img {
+    width: 189px;
+    gap: 20px;
+    height: 282px;
+    border: 1px solid #000;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.video i {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #a79fff;
+    color: black;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    right: 60px;
+    top: 110px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+}
+
+.video:hover img {
+    opacity: 0.5;
+}
+
+.video:hover i {
+    opacity: 1;
+}
+
+.videosAbout p {
+    color: white;
+}
+
+.LanguageEng {
+    position: absolute;
+    right: 0;
+    margin: 10px 0;
+    bottom: 3px;
+}
+
+.LanguageRus {
+    position: absolute;
+    right: 100px;
+    bottom: 3px;
+    margin: 10px 10px;
+}
+
+.languagesbtn {
+    width: 100px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+li button {
+    border: 2px solid green;
+    color: white;
+    font-size: 15px;
+    background-color: darkblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li button:nth-child(1):focus {
+    background-color: darkorange;
+    color: darkblue;
+    font-weight: 900;
+}
