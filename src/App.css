@@ -15,7 +15,6 @@ body {
 .container {
     width: 1600px;
     margin: 0 auto;
-    position: relative;
 }
 
 header {
@@ -196,24 +195,40 @@ main .videosTitle {
     color: white;
 }
 
-.LanguageEng {
+.LanguagebtnEng {
     position: absolute;
     right: 0;
     margin: 10px 0;
     bottom: 3px;
 }
 
-.LanguageRus {
+.LanguagebtnRus {
     position: absolute;
     right: 100px;
-    bottom: 3px;
+    top: 3px;
     margin: 10px 10px;
 }
 
-.languagesbtn {
+.lang {
+    position: absolute;
+    top: 15px;
+    right: 150px;
+}
+
+button {
+    border: 1px solid red;
     width: 100px;
     height: 40px;
     margin-right: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: darkorange;
 }
 
 li button {
@@ -225,7 +240,7 @@ li button {
     cursor: pointer;
 }
 
-li button:nth-child(1):focus {
+li button:focus {
     background-color: darkorange;
     color: darkblue;
     font-weight: 900;
