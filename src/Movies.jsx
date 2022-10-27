@@ -8,14 +8,10 @@ export default function Movies(e) {
 
     const [Movies, setMovies] = React.useState([])
     const [change, setchange] = React.useContext(changeLanguage);
-
-
-
-    function getLanguage(lang) {
+    function getLanguage(lang){
         setchange(lang)
         localStorage.setItem("Language", lang)
     }
-
     React.useEffect(() => {
         async function getMovies() {
             const dats = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=35fa8784c15d0825d778234c487a5807&language=${localStorage.getItem("Language")}&page=1`)
